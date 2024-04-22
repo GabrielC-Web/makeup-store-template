@@ -1,0 +1,61 @@
+<div class="d-flex justify-content-between flex-column align-items-center p-3 product_card h-100"
+  [ngStyle]="{'background':config.bgColor?config.bgColor:''}">
+
+  <!-- Imagen -->
+  <div class="w-100 cardImageContainer">
+
+    <img class="w-100 bg-white" [src]="data.image" style="aspect-ratio: 1;border-radius: inherit;">
+
+  </div>
+
+  <div class="w-100 d-flex flex-column align-items-center" style="height: 40%;">
+
+    <!-- Texto -->
+    <h5 class="text-center cmm-txt-thin-bold" [ngClass]="!config.textColor?'text-white':''"
+      [ngStyle]="{'text-color':config.textColor?config.textColor: ''}">{{data.name}}</h5>
+
+    <span class="cmm-txt-thin-bold" [ngClass]="!config.textColor?'text-white':''"
+      [ngStyle]="{'text-color':config.textColor?config.textColor: ''}">{{data.price}}</span>
+
+    <span class="fs-10 cmm-txt-thin-bold mt-2" [ngClass]="!config.textColor?'text-white':''"
+      [ngStyle]="{'text-color':config.textColor?config.textColor: ''}">{{data.aditionalInfo}}</span>
+
+  </div>
+
+  <!-- botones -->
+  <div class="row g-0 w-100 mx-auto mt-3">
+
+    <div class="col-6 d-flex align-items-center">
+
+      <!-- Botón de eliminar -->
+      <div class="bg-white d-flex align-items-center justify-content-center cursor-pointer"
+        style="width: 20px;height: 20px;border-radius: 50%;" (click)="removeEvent.emit()">
+
+        <mat-icon class="fs-16 cmm-txt-bold" style="width: 16px !important;height: 16px !important;">remove</mat-icon>
+
+      </div>
+
+      <!-- Cantidad de items en el carrito -->
+      <div class="bg-white px-3 mx-1 py-1 rounded w-fit">
+        <span>{{productQuantity}}</span>
+      </div>
+
+      <!-- Botón de añadir -->
+      <div class="bg-white d-flex align-items-center justify-content-center cursor-pointer"
+        style="width: 20px;height: 20px;border-radius: 50%;" (click)="addEvent.emit()">
+
+        <mat-icon class="fs-16 cmm-txt-bold" style="width: 16px !important;height: 16px !important;">add</mat-icon>
+
+      </div>
+
+    </div>
+
+    <!-- Botón -->
+    <cmp-cmm-new-button class="cmm-txt-thin-bold fs-20 col-6" style="border-radius: 50px !important"
+      [config]="{customBorderRadius: '50px', customHeight: '35px'}" (click)="addToCart.emit();navigate()">
+      <span class="cmm-txt-thin-bold">AÑADIR</span>
+    </cmp-cmm-new-button>
+
+  </div>
+
+</div>

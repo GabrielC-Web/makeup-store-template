@@ -1,0 +1,22 @@
+.cardImageContainer {
+  border-radius: 20px;
+  padding-left: .75rem;
+  padding-right: .75rem;
+  padding-top: .5rem;
+  padding-bottom: 1rem;
+}
+
+.product_card {
+  max-width: 100%;
+  border-radius: 40px;
+  max-width: 250px;
+  min-height: 378px;
+}
+
+@media (max-width: 768px) {
+
+  .product_card {
+    max-width: 200px;
+  }
+
+}

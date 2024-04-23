@@ -2,6 +2,16 @@
 export const icons = {
     search: 'assets/images/icons/search.svg',
     person: 'assets/images/icons/person.svg',
+    kart: 'assets/images/icons/kart.svg',
+    location: 'assets/images/icons/location.svg',
+    phone: 'assets/images/icons/phone.svg',
+    return: 'assets/images/icons/return.svg',
+    facebook: 'assets/images/icons/facebook.svg',
+    twitter: 'assets/images/icons/twitter.svg',
+    instagram: 'assets/images/icons/instagram.svg',
+    whatsapp: 'assets/images/icons/whatsapp.svg',
+    trash: 'assets/images/icons/trash.svg',
+    van: 'assets/images/icons/van.svg',
 }
 
 export const logos = {

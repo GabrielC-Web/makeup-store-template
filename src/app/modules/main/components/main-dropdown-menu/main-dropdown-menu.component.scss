@@ -1,0 +1,15 @@
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: white !important;
+}
+
+.dropdown_item:hover {
+    background-color: var(--v-dynamic-tertiary) !important;
+}
+
+.dropdown_item:hover a {
+    color: white !important;
+}

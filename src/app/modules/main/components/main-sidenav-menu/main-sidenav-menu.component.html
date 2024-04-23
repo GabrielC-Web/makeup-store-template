@@ -8,6 +8,7 @@
 
     <div *ngFor="let expansionPanel of expansionPanelData; index as i">
 
+        <!-- Expansion panel -->
         <mat-expansion-panel *ngIf="expansionPanel.items.length" class="col-12 p-0" (opened)="panelExpanded = i"
             [expanded]="panelExpanded == i">
 
@@ -22,6 +23,7 @@
 
         </mat-expansion-panel>
 
+        <!-- Link sin expansion -->
         <span *ngIf="!expansionPanel.items.length" class="px-4 d-flex align-items-center w-100 cursor-pointer"
             style="height: 64px;" routerLink="/products" (click)="closeSidenav.emit()">
             <a class="text-black" routerLink="/products">{{expansionPanel.header}}</a>

@@ -1,0 +1,24 @@
+.fixed_header {
+    position: fixed !important;
+    // max-height: fit-content !important;
+    z-index: 1000;
+    // transition: all ease;
+}
+
+.header_container {
+    // max-width: 1200px;
+    z-index: 2;
+}
+
+.main_container {
+    max-width: 1200px;
+    margin-top: 208px;
+}
+
+@media (max-width: 992px) {
+
+    .header_container {
+        z-index: 1;
+    }
+
+}

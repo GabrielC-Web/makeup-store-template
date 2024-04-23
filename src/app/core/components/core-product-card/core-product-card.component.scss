@@ -1,22 +1,23 @@
-.cardImageContainer {
-  border-radius: 20px;
-  padding-left: .75rem;
-  padding-right: .75rem;
-  padding-top: .5rem;
-  padding-bottom: 1rem;
+.product_bg {
+  background-size: contain;
+  background-repeat: no-repeat
+}
+
+.color_box {
+  width: 30px;
+  height: 20px;
+  border: 1px solid black;
 }
 
 .product_card {
-  max-width: 100%;
-  border-radius: 40px;
-  max-width: 250px;
-  min-height: 378px;
+  width: 290px;
+  max-width: 300px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
 
   .product_card {
-    max-width: 200px;
+    max-width: 250px;
   }
 
 }

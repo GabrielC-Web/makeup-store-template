@@ -9,7 +9,7 @@
             [sidenavOpen]="sidenavOpen"></cmp-main-header>
 
         <!-- Contenido principal -->
-        <div class="mx-auto w-100" [ngClass]="!currentRoute.includes('home') || smallMode? 'main_container':''">
+        <div class="mx-auto w-100 main_container">
 
             <mat-sidenav-container class="w-100 position-relative">
 
@@ -33,6 +33,6 @@
     </main>
 
     <!-- Footer -->
-    <!-- <cmp-main-footer></cmp-main-footer> -->
+    <cmp-main-footer></cmp-main-footer>
 
 </div>

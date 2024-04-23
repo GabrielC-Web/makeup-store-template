@@ -1,1 +1,65 @@
-<p>home-layout works!</p>
+<!-- Imagen principal -->
+<div class="bg-white d-flex flex-column align-items-center">
+
+    <section class="row g-0 justify-content-center align-items-center w-100 mx-auto home_image_bg"
+        [style.background-image]="'url(' + images.girl_makingup2 +')'">
+
+        <div class="w-100 d-flex flex-column align-items-center">
+
+            <h1 class="text-white cmm-txt-thin-bold text-center">Tonos perfectos <br> para cada piel</h1>
+
+            <p class="text-white fs-16 mt-3 mb-5">Formulaciones ricas en antioxidantes de colores vivos</p>
+
+            <cmp-cmm-new-button class="w-100"
+                [config]="{customBorderRadius: '0px',customBg: 'bg-white',customHeight: '56px'}"
+                style="max-width: 250px;">
+                <span class="text-black">VER TODO</span>
+            </cmp-cmm-new-button>
+
+        </div>
+
+
+    </section>
+
+    <!-- Marcas -->
+    <section class="row mx-auto g-0 w-100 my-5">
+
+        <p class="cmm-txt-thin-bold text-center fs-18">Las mejores marcas para cuidar tu piel y rostro</p>
+
+        <cmp-core-brands [brandImages]="brandImages"></cmp-core-brands>
+
+    </section>
+
+    <!-- Publicidad principal -->
+    <section class="row g-0 w-100 my-5">
+
+        <div *ngFor="let item of popularProducts" class="col-lg-4 d-flex justify-content-center">
+
+            <cmp-cmm-product-card class="w-100 d-flex justify-content-center" [data]="item"></cmp-cmm-product-card>
+        </div>
+
+    </section>
+
+    <div class="parallax_bg w-100 d-flex align-items-center justify-content-center my-5"
+        [style.background-image]="'url(' + images.makeup_bg +')'" style="height: 250px;max-width: 1500px;">
+
+        <div class="d-flex align-items-center justify-content-center flex-column">
+
+            <p class="text-white fs-24">Disfruta de las ofertas con nuestros</p>
+
+            <h3 class="text-white cmm-txt-thin-bold fs-40 mb-3">Makeup sets</h3>
+
+            <cmp-cmm-new-button class="w-100"
+                [config]="{customBorderRadius: '0px',customBg: 'cmm-bg-project-tertiary',customHeight: '56px'}"
+                style="max-width: 250px;">
+                <span class="text-white cmm-txt-thin-bold fs-20">VER SETS</span>
+            </cmp-cmm-new-button>
+
+        </div>
+
+    </div>
+
+    <!-- características del negocio con íconos -->
+    <cmp-cmm-business-qualities class="w-100" [items]="items"></cmp-cmm-business-qualities>
+
+</div>

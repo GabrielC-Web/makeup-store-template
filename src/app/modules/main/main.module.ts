@@ -7,12 +7,14 @@ import { CmmModule } from 'src/app/common/common.module';
 import { MainHeaderComponent } from './components/main-header/main-header.component';
 import { MainDropdownMenuComponent } from './components/main-dropdown-menu/main-dropdown-menu.component';
 import { MainSidenavMenuComponent } from './components/main-sidenav-menu/main-sidenav-menu.component';
+import { MainFooterComponent } from './components/main-footer/main-footer.component';
 
 
 @NgModule({
   declarations: [
     MainLayoutComponent,
     MainHeaderComponent,
+    MainFooterComponent,
     MainDropdownMenuComponent,
     MainSidenavMenuComponent
   ],

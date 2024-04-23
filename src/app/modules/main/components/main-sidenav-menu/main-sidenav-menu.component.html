@@ -1,0 +1,32 @@
+<div class="row mx-auto w-100">
+
+    <div class="col-12 d-flex justify-content-end pt-3 pe-3">
+
+        <mat-icon class="cursor-pointer" (click)="closeSidenav.emit()">close</mat-icon>
+
+    </div>
+
+    <div *ngFor="let expansionPanel of expansionPanelData; index as i">
+
+        <mat-expansion-panel *ngIf="expansionPanel.items.length" class="col-12 p-0" (opened)="panelExpanded = i"
+            [expanded]="panelExpanded == i">
+
+            <mat-expansion-panel-header style="background: transparent;height: 64px;" expandedHeight="64px"
+                collapsedHeight="64px">{{expansionPanel.header}}</mat-expansion-panel-header>
+
+            <div *ngFor="let item of expansionPanel.items; index as i"
+                class="cursor-pointer dropdown_item border-bottom px-2 py-3">
+
+                <a class="text-black" routerLink="/products" (click)="closeSidenav.emit()">{{item}}</a>
+            </div>
+
+        </mat-expansion-panel>
+
+        <span *ngIf="!expansionPanel.items.length" class="px-4 d-flex align-items-center w-100 cursor-pointer"
+            style="height: 64px;" routerLink="/products" (click)="closeSidenav.emit()">
+            <a class="text-black" routerLink="/products">{{expansionPanel.header}}</a>
+        </span>
+
+    </div>
+
+</div>

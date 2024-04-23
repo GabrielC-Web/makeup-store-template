@@ -66,4 +66,15 @@ export class MainHeaderComponent {
     },
   ]
 
+  /**
+   * Toggle el sidenav
+   */
+  toggleSidenav() {
+
+    this.sidenavOpen = !this.sidenavOpen
+
+    this.openSidenav.emit(this.sidenavOpen)
+
+  }
+
 }

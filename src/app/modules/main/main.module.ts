@@ -6,13 +6,15 @@ import { MainLayoutComponent } from './pages/main-layout/main-layout.component';
 import { CmmModule } from 'src/app/common/common.module';
 import { MainHeaderComponent } from './components/main-header/main-header.component';
 import { MainDropdownMenuComponent } from './components/main-dropdown-menu/main-dropdown-menu.component';
+import { MainSidenavMenuComponent } from './components/main-sidenav-menu/main-sidenav-menu.component';
 
 
 @NgModule({
   declarations: [
     MainLayoutComponent,
     MainHeaderComponent,
-    MainDropdownMenuComponent
+    MainDropdownMenuComponent,
+    MainSidenavMenuComponent
   ],
   imports: [
     CommonModule,

@@ -28,9 +28,10 @@ export class HomeLayoutComponent {
       name: 'PROTECTOR SOLAR',
       price: '120',
       variants: [
-        '#D7D3D2',
-        '#000',
-        '#E5B8A3'
+        '#9A8073',
+        '#B79184',
+        '#C79A85',
+        '#D7BCB3'
       ]
     },
     {
@@ -38,8 +39,10 @@ export class HomeLayoutComponent {
       name: 'PROTECTOR SOLAR',
       price: '120',
       variants: [
-        '#E5B8A3',
-        '#000',
+        '#9A8073',
+        '#B79184',
+        '#C79A85',
+        '#D7BCB3'
       ]
     },
     {
@@ -47,11 +50,10 @@ export class HomeLayoutComponent {
       name: 'PROTECTOR SOLAR',
       price: '120',
       variants: [
-        '#fff',
-        '#000',
-        '#148954',
-        '#0C1284',
-        '#A46D09'
+        '#9A8073',
+        '#B79184',
+        '#C79A85',
+        '#D7BCB3'
       ]
     },
   ]

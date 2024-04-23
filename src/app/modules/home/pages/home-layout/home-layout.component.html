@@ -13,7 +13,7 @@
             <cmp-cmm-new-button class="w-100"
                 [config]="{customBorderRadius: '0px',customBg: 'bg-white',customHeight: '56px'}"
                 style="max-width: 250px;">
-                <span class="text-black">VER TODO</span>
+                <span class="text-black cmm-txt-thin-bold fs-20">VER TODO</span>
             </cmp-cmm-new-button>
 
         </div>
@@ -31,15 +31,70 @@
     </section>
 
     <!-- Publicidad principal -->
+    <section class="row w-100 g-0 my-5" style="padding-left: 75px;padding-right: 75px;">
+
+        <!-- Ad principal tamaño grande -->
+        <div class="col-12 position-relative main_ad_bg d-none d-lg-flex flex-column"
+            [style.background-image]="'url(' + images.girl_makingup +')'">
+
+            <!-- Ad principal -->
+            <div class="position-absolute main_ad">
+
+                <img [src]="images.product1" alt="" class="w-100">
+
+                <div class="d-flex align-items-start justify-content-center flex-column">
+
+                    <h3 class="mb-3 cmm-txt-thin-bold">Dior vibrant lipstick</h3>
+
+                    <p class="mb-5 fs-20">Colores esenciales y sets únicos como tú</p>
+
+                    <cmp-cmm-new-button [config]="{customBorderRadius: '0px',customHeight: '56px'}">
+                        <span class="text-white cmm-txt-thin-bold fs-20 px-3">COMPRAR</span>
+                    </cmp-cmm-new-button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Ad principal tamaño pequeño -->
+        <div class="col-12 d-flex d-lg-none">
+
+            <!-- Ad principal -->
+            <div class="">
+
+                <img [src]="images.product1" alt="" class="w-100">
+
+                <div class="d-flex align-items-start justify-content-center flex-column">
+
+                    <h3 class="mb-3 cmm-txt-thin-bold">Dior vibrant lipstick</h3>
+
+                    <p class="mb-5 fs-20">Colores esenciales y sets únicos como tú</p>
+
+                    <cmp-cmm-new-button [config]="{customBorderRadius: '0px',customHeight: '56px'}">
+                        <span class="text-white cmm-txt-thin-bold fs-20 px-3">COMPRAR</span>
+                    </cmp-cmm-new-button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Productos principales -->
     <section class="row g-0 w-100 my-5">
 
-        <div *ngFor="let item of popularProducts" class="col-lg-4 d-flex justify-content-center">
+        <div *ngFor="let item of popularProducts" class="col-md-6 col-lg-4 d-flex justify-content-center mb-3">
 
             <cmp-cmm-product-card class="w-100 d-flex justify-content-center" [data]="item"></cmp-cmm-product-card>
         </div>
 
     </section>
 
+    <!-- Imagen co parallax -->
     <div class="parallax_bg w-100 d-flex align-items-center justify-content-center my-5"
         [style.background-image]="'url(' + images.makeup_bg +')'" style="height: 250px;max-width: 1500px;">
 
@@ -58,6 +113,32 @@
         </div>
 
     </div>
+
+    <section class="my-5 w-100 row">
+
+        <div class="col-lg-8 mb-3 mb-lg-0">
+
+            <img [src]="images.girl_makingup2" class="w-100" alt="">
+
+        </div>
+
+        <div class="col-lg-4 d-flex align-items-center justify-content-center">
+
+            <div class="">
+
+                <h3 class="mb-3 cmm-txt-thin-bold">Dior vibrant lipstick</h3>
+
+                <p class="mb-5">Colores esenciales y sets únicos como tú</p>
+
+                <cmp-cmm-new-button [config]="{customBorderRadius: '0px',customHeight: '56px'}">
+                    <span class="text-white cmm-txt-thin-bold fs-20">COMPRAR</span>
+                </cmp-cmm-new-button>
+
+            </div>
+
+        </div>
+
+    </section>
 
     <!-- características del negocio con íconos -->
     <cmp-cmm-business-qualities class="w-100" [items]="items"></cmp-cmm-business-qualities>

@@ -1,0 +1,31 @@
+<div class="row flex-column align-items-center justify-content-between" style="width: 290px;height: 460px;">
+
+    <!-- Espacio de la imagen -->
+    <div class="col-12" style="aspect-ratio: 1;">
+
+        <img [src]="product.image" class="w-100 h-100" alt="">
+
+    </div>
+
+    <!-- Espacio de la información -->
+    <div class="col-12 d-flex align-items-center justify-content-between flex-column gap-3 mt-3">
+
+        <h5 class="cmm-txt-thin-bold w-100">{{product.name}}</h5>
+
+        <div class="d-flex w-100 justify-content-start gap-3">
+
+            <span class="text-black cmm-txt-thin-bold fs-16">{{product.price}}</span>
+
+            <span class="text-secondary fs-16 cmm-txt-thin-bold"
+                style="text-decoration: line-through">{{product.previousPrice}}</span>
+
+        </div>
+
+
+    </div>
+
+    <!-- Botón de comprar -->
+    <cmp-cmm-new-button class="w-80" [config]="{customBorderRadius: '0'}">
+        <span class="text-white cmm-txt-thin-bold">COMPRAR</span>
+    </cmp-cmm-new-button>
+</div>

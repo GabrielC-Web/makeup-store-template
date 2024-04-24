@@ -1,0 +1,34 @@
+<div class="row w-100 g-0 h-100 justify-content-center bg-white">
+
+    <cmp-cmm-product-detail class="my-5 bg-white" [product]="product"
+        [config]="{button: {customBorderRadius: '10px', customHeight: '48px'}}"></cmp-cmm-product-detail>
+
+
+    <section class="col-12 my-5 d-flex justify-content-center">
+
+        <h4 class="text-center">También podría interesarte</h4>
+
+    </section>
+
+    <section class="col-12 d-flex flex-column justify-content-center align-items-center my-5">
+
+        <h3 class="my-5">CUIDA TU PIEL Y LUCE PERFECTA CON ESTOS SETS</h3>
+
+        <div class="row w-100 my-5">
+
+            <div *ngFor="let item of moreProducts" class="col-sm-6 col-md-3 mb-3 mb-sm-0">
+                <cmp-products-presentation-card [product]="item"
+                    routerLink="/products"></cmp-products-presentation-card>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <cmp-cmm-new-button class="w-100 mt-5" style="max-width: 400px;margin-bottom: 200px;"
+        [config]="{customBorderRadius: '0px', customHeight: '48px'}">
+        <span class="text-white fs-20" routerLink="/products">VER TODO</span>
+    </cmp-cmm-new-button>
+
+</div>

@@ -2,7 +2,7 @@
 
     <!-- Detalle de producto -->
     <cmp-cmm-product-detail class="my-5 bg-white" [product]="product"
-        [config]="{button: {customBorderRadius: '10px', customHeight: '48px'}}"></cmp-cmm-product-detail>
+        [config]="{button: {customBorderRadius: '10px', customHeight: '48px'}, colorBox: {colorBoxBorder: true, colorBoxRounded: true}}"></cmp-cmm-product-detail>
 
     <!-- otros productos -->
     <section class="col-12 my-5 d-flex justify-content-center flex-column align-items-center">
@@ -22,7 +22,7 @@
                     <div class="w-100 h-100 p-0 d-flex justify-content-center align-items-center" style="gap: 2rem;">
 
                         <cmp-cmm-product-card *ngFor="let item of productSection" [data]="item"
-                            routerLink="/products/detail"></cmp-cmm-product-card>
+                            [config]="{colorBoxRounded: true}" routerLink="/products/detail"></cmp-cmm-product-card>
 
                     </div>
 
@@ -38,7 +38,8 @@
 
                     <div class="w-100 h-100 p-0 d-flex justify-content-center align-items-center" style="gap: 2rem;">
 
-                        <cmp-cmm-product-card [data]="item" routerLink="/products/detail"></cmp-cmm-product-card>
+                        <cmp-cmm-product-card [data]="item" [config]="{colorBoxRounded: true}"
+                            routerLink="/products/detail"></cmp-cmm-product-card>
 
                     </div>
 

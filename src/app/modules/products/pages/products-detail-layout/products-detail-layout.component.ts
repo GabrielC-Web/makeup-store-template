@@ -18,32 +18,22 @@ export class ProductsDetailLayoutComponent {
       images.product7,
     ],
     mainImage: images.product6,
-    name: 'CAMISETA MARCA',
-    brand: 'UNICOLOR',
+    name: 'SOMBRAS 5 COLORES',
+    brand: 'DIOR',
     price: '175.00',
     sku: 'KROGGM93746917',
     partNumber: '93746917',
     maximunPurchase: 1,
     quantity: 1,
     aditionalInfo: {
-      'Color': 'Blanco',
-      'Talla': 'S',
+      'Color': 'Paleta de azules',
     },
     variants: [
-      '#fff',
-      '#000',
-      '#148954',
-      '#0C1284',
-      '#A46D09'
+      '#9A8073',
+      '#B79184',
+      '#C79A85',
+      '#D7BCB3'
     ],
-    sizes: [
-      'XS',
-      'S',
-      'M',
-      'L',
-      'XL',
-      'XXL',
-    ]
   }
 
   /**
@@ -82,100 +72,144 @@ export class ProductsDetailLayoutComponent {
   carouselProductsBigScreen: any[] = [
     [
       {
-        image: images.product12,
-        name: 'SNEAKERS MARCA',
-        price: '158',
-        variants: [
-          '#D7D3D2',
-          '#000',
-          '#E5B8A3'
-        ]
-      },
-      {
-        image: images.product3,
-        name: 'SANDALIAS MARCA',
-        price: '200',
-        variants: [
-          '#E5B8A3',
-          '#000',
-        ]
-      },
-      {
         image: images.product5,
-        name: 'CAMISETA MARCA',
+        name: 'PROTECTOR SOLAR',
         price: '158',
         variants: [
-          '#fff',
-          '#000',
-          '#148954',
-          '#0C1284',
-          '#A46D09'
+          '#9A8073',
+          '#B79184',
+          '#C79A85',
+          '#D7BCB3'
         ]
       },
-    ],
-    [
       {
         image: images.product6,
-        name: 'JEANS MARCA',
-        price: '158',
-        variants: [
-          '#356281',
-          '#6F9FC5',
-          '#000'
-        ]
-      },
-      {
-        image: images.product4,
-        name: 'CARTERA ALTAS',
+        name: 'POLVO COMPACTO',
         price: '200',
         variants: [
-          '#000'
+          '#9A8073',
+          '#B79184',
+          '#C79A85',
+          '#D7BCB3'
         ]
       },
       {
         image: images.product7,
-        name: 'GORRA MARCA',
-        price: '200',
+        name: 'SOMBRA 5 COLORES DIOR',
+        price: '158',
         variants: [
-          '#D7D3D2',
-          '#000',
-          '#074459'
+          '#9A8073',
+          '#B79184',
+          '#C79A85',
+          '#D7BCB3'
         ]
       },
     ],
     [
       {
-        image: images.product11,
-        name: 'SANDALIAS MARCA',
+        image: images.product4,
+        name: 'PROTECTOR SOLAR',
+        price: '158',
+        variants: [
+          '#9A8073',
+          '#B79184',
+          '#C79A85',
+          '#D7BCB3'
+        ]
+      },
+      {
+        image: images.product9,
+        name: 'LABIAL MATE',
         price: '200',
         variants: [
-          '#E5B8A3',
-          '#000',
+          '#9A8073',
+          '#B79184',
+          '#C79A85',
+          '#D7BCB3'
         ]
       },
       {
-        image: images.product12,
-        name: 'SNEAKERS MARCA',
-        price: '158',
+        image: images.product10,
+        name: 'LABIAL HIDRATANTE',
+        price: '200',
         variants: [
-          '#D7D3D2',
-          '#000',
-          '#E5B8A3'
+          '#9A8073',
+          '#B79184',
+          '#C79A85',
+          '#D7BCB3'
         ]
-      },
+      }
+    ],
+    [
       {
         image: images.product5,
-        name: 'CAMISETA MARCA',
+        name: 'PROTECTOR SOLAR',
         price: '158',
         variants: [
-          '#fff',
-          '#000',
-          '#148954',
-          '#0C1284',
-          '#A46D09'
+          '#9A8073',
+          '#B79184',
+          '#C79A85',
+          '#D7BCB3'
         ]
       },
+      {
+        image: images.product6,
+        name: 'POLVO COMPACTO',
+        price: '200',
+        variants: [
+          '#9A8073',
+          '#B79184',
+          '#C79A85',
+          '#D7BCB3'
+        ]
+      },
+      {
+        image: images.product7,
+        name: 'SOMBRA 5 COLORES DIOR',
+        price: '158',
+        variants: [
+          '#9A8073',
+          '#B79184',
+          '#C79A85',
+          '#D7BCB3'
+        ]
+      }
     ],
+    [
+      {
+        image: images.product4,
+        name: 'PROTECTOR SOLAR',
+        price: '158',
+        variants: [
+          '#9A8073',
+          '#B79184',
+          '#C79A85',
+          '#D7BCB3'
+        ]
+      },
+      {
+        image: images.product9,
+        name: 'LABIAL MATE',
+        price: '200',
+        variants: [
+          '#9A8073',
+          '#B79184',
+          '#C79A85',
+          '#D7BCB3'
+        ]
+      },
+      {
+        image: images.product10,
+        name: 'LABIAL HIDRATANTE',
+        price: '200',
+        variants: [
+          '#9A8073',
+          '#B79184',
+          '#C79A85',
+          '#D7BCB3'
+        ]
+      }
+    ]
   ]
   /**
    * Productos del carrusel

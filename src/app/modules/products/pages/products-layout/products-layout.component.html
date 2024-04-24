@@ -1,0 +1,31 @@
+<div class="row mx-auto w-100 h-100 bg-white">
+
+    <!-- Imagen co parallax -->
+    <div class="parallax_bg w-100 d-flex align-items-center justify-content-center my-5"
+        [style.background-image]="'url(' + images.makeup_bg +')'" style="height: 250px;max-width: 1500px;">
+
+    </div>
+
+    <section class="col-12 my-5">
+
+        <!-- productos -->
+        <div class="row g-0 w-100 justify-content-center mt-5">
+
+            <div *ngFor="let product of products" class="col-12 col-sm-6 col-md-4 d-flex justify-content-center mb-5">
+
+                <cmp-cmm-product-card class="w-100 d-flex justify-content-center" [data]="product"
+                    routerLink="/products/detail" [config]="{colorBoxRounded: true}"></cmp-cmm-product-card>
+
+            </div>
+
+            <!-- Paginador -->
+            <cmp-cmm-paginator class="col-12 px-4" [posts]="products"></cmp-cmm-paginator>
+
+        </div>
+
+    </section>
+
+    <!-- características del negocio con íconos -->
+    <cmp-cmm-business-qualities class="w-100" [items]="items"></cmp-cmm-business-qualities>
+
+</div>

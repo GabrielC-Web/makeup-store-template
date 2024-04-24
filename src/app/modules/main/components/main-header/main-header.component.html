@@ -1,4 +1,4 @@
-<header class="row cmm-bg-project-primary justify-content-center mx-auto w-100 pt-5 px-3 pb-3">
+<header class="row cmm-bg-project-primary justify-content-center mx-auto w-100 pt-3 px-3 pb-3">
 
     <!-- Espacio para publicidad, si la hay -->
     <ng-container></ng-container>
@@ -20,7 +20,7 @@
             </div>
 
             <!-- input y botones en tamaño grande -->
-            <div class="col-4 d-none d-lg-flex align-items-center">
+            <div class="col-4 d-none d-lg-flex align-items-center gap-2">
 
                 <div class="" style="max-width: 200px;">
                     <cmm-cmp-i-text label="Buscar" subscriptSizing="dynamic">
@@ -28,9 +28,9 @@
                     </cmm-cmp-i-text>
                 </div>
 
-                <img [src]="icons.person" alt="" class="header_icon" lazy>
+                <img [src]="icons.person" alt="" class="header_icon cursor-pointer" lazy>
 
-                <img class="header_icon" [src]="icons.kart" alt="" lazy>
+                <img class="header_icon cursor-pointer" routerLink="products/overview" [src]="icons.kart" alt="" lazy>
 
             </div>
 

@@ -23,6 +23,16 @@ export class MainLayoutComponent {
    */
   smallMode: boolean = false
 
+  /**
+   * Espacio que se le dará al anuncio superior
+   */
+  headerAppSpace: number = 0
+
+  /**
+   * Indica si debo mostrar el anuncio de arriba
+   */
+  showTopAnnouce: boolean = true
+
   @HostListener('window:resize')
   onResize(e: Event) {
 
@@ -50,6 +60,10 @@ export class MainLayoutComponent {
 
     this.currentRoute = location.href
     this.listenRouteChanges()
+
+    if(this.showTopAnnouce) {
+      this.headerAppSpace = 60
+    }
 
   }
 

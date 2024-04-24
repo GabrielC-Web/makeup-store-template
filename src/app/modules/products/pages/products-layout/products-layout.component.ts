@@ -14,95 +14,137 @@ export class ProductsLayoutComponent {
 
   products: any[] = [
     {
-      image: images.product4,
-      name: 'SNEAKERS MARCA',
+      image: images.product5,
+      name: 'PROTECTOR SOLAR',
       price: '158',
       variants: [
-        '#D7D3D2',
-        '#000',
-        '#E5B8A3'
+        '#9A8073',
+        '#B79184',
+        '#C79A85',
+        '#D7BCB3'
       ]
     },
     {
-      image: images.product4,
-      name: 'SANDALIAS MARCA',
+      image: images.product6,
+      name: 'POLVO COMPACTO',
       price: '200',
       variants: [
-        '#E5B8A3',
-        '#000',
+        '#9A8073',
+        '#B79184',
+        '#C79A85',
+        '#D7BCB3'
       ]
     },
     {
-      image: images.product4,
-      name: 'CAMISETA MARCA',
+      image: images.product7,
+      name: 'SOMBRA 5 COLORES DIOR',
       price: '158',
       variants: [
-        '#fff',
-        '#000',
-        '#148954',
-        '#0C1284',
-        '#A46D09'
+        '#9A8073',
+        '#B79184',
+        '#C79A85',
+        '#D7BCB3'
       ]
     },
     {
       image: images.product4,
-      name: 'JEANS MARCA',
+      name: 'PROTECTOR SOLAR',
       price: '158',
       variants: [
-        '#356281',
-        '#6F9FC5',
-        '#000'
+        '#9A8073',
+        '#B79184',
+        '#C79A85',
+        '#D7BCB3'
+      ]
+    },
+    {
+      image: images.product9,
+      name: 'LABIAL MATE',
+      price: '200',
+      variants: [
+        '#9A8073',
+        '#B79184',
+        '#C79A85',
+        '#D7BCB3'
+      ]
+    },
+    {
+      image: images.product10,
+      name: 'LABIAL HIDRATANTE',
+      price: '200',
+      variants: [
+        '#9A8073',
+        '#B79184',
+        '#C79A85',
+        '#D7BCB3'
+      ]
+    },
+    {
+      image: images.product5,
+      name: 'PROTECTOR SOLAR',
+      price: '158',
+      variants: [
+        '#9A8073',
+        '#B79184',
+        '#C79A85',
+        '#D7BCB3'
+      ]
+    },
+    {
+      image: images.product6,
+      name: 'POLVO COMPACTO',
+      price: '200',
+      variants: [
+        '#9A8073',
+        '#B79184',
+        '#C79A85',
+        '#D7BCB3'
+      ]
+    },
+    {
+      image: images.product7,
+      name: 'SOMBRA 5 COLORES DIOR',
+      price: '158',
+      variants: [
+        '#9A8073',
+        '#B79184',
+        '#C79A85',
+        '#D7BCB3'
       ]
     },
     {
       image: images.product4,
-      name: 'CARTERA ALTAS',
-      price: '200',
+      name: 'PROTECTOR SOLAR',
+      price: '158',
       variants: [
-        '#000'
+        '#9A8073',
+        '#B79184',
+        '#C79A85',
+        '#D7BCB3'
       ]
     },
     {
-      image: images.product4,
-      name: 'GORRA MARCA',
+      image: images.product9,
+      name: 'LABIAL MATE',
       price: '200',
       variants: [
-        '#D7D3D2',
-        '#000',
-        '#074459'
+        '#9A8073',
+        '#B79184',
+        '#C79A85',
+        '#D7BCB3'
       ]
     },
     {
-      image: images.product4,
-      name: 'GORRA MARCA',
+      image: images.product10,
+      name: 'LABIAL HIDRATANTE',
       price: '200',
       variants: [
-        '#D7D3D2',
-        '#000',
-        '#074459'
+        '#9A8073',
+        '#B79184',
+        '#C79A85',
+        '#D7BCB3'
       ]
     },
-    {
-      image: images.product4,
-      name: 'GORRA MARCA',
-      price: '200',
-      variants: [
-        '#D7D3D2',
-        '#000',
-        '#074459'
-      ]
-    },
-    {
-      image: images.product4,
-      name: 'GORRA MARCA',
-      price: '200',
-      variants: [
-        '#D7D3D2',
-        '#000',
-        '#074459'
-      ]
-    },
-
   ]
 
   items: any[] = [

@@ -18,8 +18,6 @@ export class MainFooterComponent {
 
     this.footerLogoHeight = document.getElementById('footer_logo')?.offsetHeight as number
 
-    console.log(this.footerLogoHeight);
-
   }
 
 }

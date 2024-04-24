@@ -1,15 +1,68 @@
 <div class="row w-100 g-0 h-100 justify-content-center bg-white">
 
+    <!-- Detalle de producto -->
     <cmp-cmm-product-detail class="my-5 bg-white" [product]="product"
         [config]="{button: {customBorderRadius: '10px', customHeight: '48px'}}"></cmp-cmm-product-detail>
 
-
-    <section class="col-12 my-5 d-flex justify-content-center">
+    <!-- otros productos -->
+    <section class="col-12 my-5 d-flex justify-content-center flex-column align-items-center">
 
         <h4 class="text-center">También podría interesarte</h4>
 
+        <!-- Carrusel de productos -->
+        <cmp-cmm-carousel class="w-100 my-5" carouselId="products_detail_carousel" [customButtons]="true">
+
+            <!-- Elementos del carrusel en tamaño grande -->
+            <ng-container *ngIf="!carouselProductsSmallScreen.length" carousel>
+
+                <!-- Items del carrusel -->
+                <div *ngFor="let productSection of carouselProductsBigScreen, index as i"
+                    class="carousel-item h-100 w-100" [ngClass]="{'active': i == 0}">
+
+                    <div class="w-100 h-100 p-0 d-flex justify-content-center align-items-center" style="gap: 2rem;">
+
+                        <cmp-cmm-product-card *ngFor="let item of productSection" [data]="item"
+                            routerLink="/products/detail"></cmp-cmm-product-card>
+
+                    </div>
+
+                </div>
+
+            </ng-container>
+
+            <!-- Elementos del carrusel en tamaño pequeño -->
+            <ng-container *ngIf="carouselProductsSmallScreen.length" carousel>
+
+                <div *ngFor="let item of carouselProductsSmallScreen, index as i" class="carousel-item h-100 w-100"
+                    [ngClass]="{'active': i == 0}">
+
+                    <div class="w-100 h-100 p-0 d-flex justify-content-center align-items-center" style="gap: 2rem;">
+
+                        <cmp-cmm-product-card [data]="item" routerLink="/products/detail"></cmp-cmm-product-card>
+
+                    </div>
+
+                </div>
+
+            </ng-container>
+
+            <!-- Botones personalizados -->
+
+            <button class="rounded d-flex align-items-center justify-content-center" mat-icon-button prev
+                [attr.data-bs-target]="'#products_detail_carousel'" data-bs-slide="prev">
+                <mat-icon class="text-black">arrow_back_ios</mat-icon>
+            </button>
+
+            <button class="rounded d-flex align-items-center justify-content-center" mat-icon-button next
+                [attr.data-bs-target]="'#products_detail_carousel'" data-bs-slide="next">
+                <mat-icon class="text-black">arrow_forward_ios</mat-icon>
+            </button>
+
+        </cmp-cmm-carousel>
+
     </section>
 
+    <!-- otros productos -->
     <section class="col-12 d-flex flex-column justify-content-center align-items-center my-5">
 
         <h3 class="my-5">CUIDA TU PIEL Y LUCE PERFECTA CON ESTOS SETS</h3>

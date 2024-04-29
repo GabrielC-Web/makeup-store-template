@@ -1,9 +1,22 @@
 <div class="row flex-column align-items-center justify-content-between" style="width: 290px;height: 460px;">
 
     <!-- Espacio de la imagen -->
-    <div class="col-12" style="aspect-ratio: 1;">
+    <div class="flip_box">
+      <div class="col-12 flip_box_inner" style="aspect-ratio: 1;">
 
-        <img [src]="product.image" class="w-100 h-100" alt="">
+        <div class="flip_front">
+
+          <img [src]="product.image" class="w-100 h-100 cursor-pointer" alt="">
+
+        </div>
+
+        <div class="flip_back">
+
+          <img [src]="product.image" class="w-100 h-100 cursor-pointer" alt="">
+
+        </div>
+
+      </div>
 
     </div>
 

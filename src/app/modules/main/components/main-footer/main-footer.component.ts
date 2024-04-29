@@ -14,6 +14,24 @@ export class MainFooterComponent {
 
   footerLogoHeight: number = 0
 
+  items: any[] = [
+    {
+      icon: icons.van,
+      info: 'Envío Gratis',
+      text: 'Solo dentro la ciudad de Caracas'
+    },
+    {
+      icon: icons.return,
+      info: 'Devoluciones',
+      text: 'Devoluciones gratuitas y cambios'
+    },
+    {
+      icon: icons.purse,
+      info: 'Empaque exclusivo',
+      text: 'Empaque exclusivo por marca'
+    },
+  ]
+
   ngAfterViewInit() {
 
     this.footerLogoHeight = document.getElementById('footer_logo')?.offsetHeight as number

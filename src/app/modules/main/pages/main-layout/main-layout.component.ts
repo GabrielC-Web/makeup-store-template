@@ -61,6 +61,8 @@ export class MainLayoutComponent {
       },
     ],
     socialNetworkIcons: [icons.facebook,icons.instagram],
+    mainLogo: logos.nature,
+    mainLogoSize: {width: '150px', height: '50px'},
     businessInfo: {
       name: 'nature',
       direction: 'Av. Circumbalación del sol, calle 110 con av 62 de El Cafetal, Caracas',

@@ -3,40 +3,41 @@
 
     <main class="row w-100 g-0 justify-content-center align-items-start">
 
-      <!-- Anuncio -->
-      <div class="cmm-bg-project-tertiary position-fixed" style="width: 100%;height: 60px;" [ngStyle]="{'z-index':sidenavOpen?'1':'200'}"></div>
+        <!-- Anuncio -->
+        <div class="cmm-bg-project-tertiary position-fixed" style="width: 100%;height: 60px;"
+            [ngStyle]="{'z-index':sidenavOpen?'1':'200'}"></div>
 
-      <!-- Espacio para el navbar -->
-      <cmp-main-header id="header" class="w-100 position-fixed header_container"
-          [ngStyle]="{'z-index':sidenavOpen?'1':'200','margin-top':headerAppSpace + 'px'}" (openSidenav)="sidenavOpen = $event"
-          [sidenavOpen]="sidenavOpen"></cmp-main-header>
+        <!-- Espacio para el navbar -->
+        <cmp-main-header id="header" class="w-100 position-fixed header_container"
+            [ngStyle]="{'z-index':sidenavOpen?'1':'200','margin-top':headerAppSpace + 'px'}"
+            (openSidenav)="sidenavOpen = $event" [sidenavOpen]="sidenavOpen"></cmp-main-header>
 
-      <!-- Contenido principal -->
-      <div class="mx-auto w-100 main_container" [ngStyle]="{'margin-top': 184 + headerAppSpace + 'px'}">
+        <!-- Contenido principal -->
+        <div class="mx-auto w-100 main_container" [ngStyle]="{'margin-top': 184 + headerAppSpace + 'px'}">
 
-          <mat-sidenav-container class="w-100 position-relative">
+            <mat-sidenav-container class="w-100 position-relative">
 
-              <!-- sidenav -->
-              <mat-sidenav class="w-100" mode="over" [opened]="sidenavOpen" [fixedInViewport]="true">
+                <!-- sidenav -->
+                <mat-sidenav class="w-100" mode="over" [opened]="sidenavOpen" [fixedInViewport]="true">
 
-                  <!-- componente de sidenav -->
-                  <cmp-main-sidenav-menu class="w-100" (closeSidenav)="sidenavOpen = false"></cmp-main-sidenav-menu>
+                    <!-- componente de sidenav -->
+                    <cmp-main-sidenav-menu class="w-100" (closeSidenav)="sidenavOpen = false"></cmp-main-sidenav-menu>
 
-              </mat-sidenav>
+                </mat-sidenav>
 
-              <!-- Contenido principal -->
-              <mat-sidenav-content>
-                  <router-outlet></router-outlet>
-              </mat-sidenav-content>
+                <!-- Contenido principal -->
+                <mat-sidenav-content>
+                    <router-outlet></router-outlet>
+                </mat-sidenav-content>
 
-          </mat-sidenav-container>
+            </mat-sidenav-container>
 
-      </div>
+        </div>
 
     </main>
 
     <!-- Footer -->
     <!-- <cmp-main-footer></cmp-main-footer> -->
-    <cmp-cmm-new-footer [config]="footerConfig"></cmp-cmm-new-footer>
+    <cmp-cmm-new-footer [config]="footerConfig" [showTitle]="false"></cmp-cmm-new-footer>
 
 </div>

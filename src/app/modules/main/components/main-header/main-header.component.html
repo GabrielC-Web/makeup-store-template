@@ -14,7 +14,7 @@
             <!-- Div del título -->
             <div class="col-lg-4 d-flex justify-content-center">
 
-              <img [src]="logos.nature" lazy alt="" class="cursor-pointer" style="max-width: 200px;max-height: 70px;"
+                <img [src]="logos.nature" lazy alt="" class="cursor-pointer" style="max-width: 200px;max-height: 70px;"
                     routerLink="/home">
 
             </div>
@@ -68,8 +68,9 @@
 
                         <div class="d-flex align-items-center">
 
-                            <img class="header_icon" [src]="icons.person" alt="">
-                            <img class="header_icon" [src]="icons.kart" alt="">
+                            <img class="header_icon cursor-pointer" [src]="icons.person" alt="">
+                            <img class="header_icon cursor-pointer" routerLink="products/overview" [src]="icons.kart"
+                                alt="">
 
                         </div>
 

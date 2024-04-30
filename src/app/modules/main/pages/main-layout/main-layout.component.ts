@@ -60,9 +60,9 @@ export class MainLayoutComponent {
         text: 'Empaque exclusivo por marca'
       },
     ],
-    socialNetworkIcons: [icons.facebook,icons.instagram],
+    socialNetworkIcons: [icons.facebook, icons.instagram],
     mainLogo: logos.nature,
-    mainLogoSize: {width: '150px', height: '50px'},
+    mainLogoSize: { width: '150px', height: '50px' },
     businessInfo: {
       name: 'nature',
       direction: 'Av. Circumbalación del sol, calle 110 con av 62 de El Cafetal, Caracas',
@@ -111,7 +111,7 @@ export class MainLayoutComponent {
     this.currentRoute = location.href
     this.listenRouteChanges()
 
-    if(this.showTopAnnouce) {
+    if (this.showTopAnnouce) {
       this.headerAppSpace = 60
     }
 

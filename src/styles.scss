@@ -12,9 +12,15 @@
 @import "./app/common/assets/styles/scss/effects.scss";
 @import "./app/common/assets/styles/scss/themes-material.scss";
 
+html {
+    --scroll-behavior: smooth !important;
+    scroll-behavior: smooth !important;
+}
+
 *:not(.material-icons) {
     font-family: "montserrat" !important;
     box-sizing: border-box;
+    box-sizing: border-box !important;
 }
 
 body {

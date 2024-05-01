@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { CmmDialogService } from 'src/app/common/services/dialogs.service';
 import { icons, logos } from 'src/assets/images/image-routes';
 
 @Component({
@@ -66,6 +67,12 @@ export class MainHeaderComponent {
     },
   ]
 
+  constructor(
+    private dialogsService: CmmDialogService
+  ) {
+
+  }
+
   /**
    * Toggle el sidenav
    */
@@ -74,6 +81,19 @@ export class MainHeaderComponent {
     this.sidenavOpen = !this.sidenavOpen
 
     this.openSidenav.emit(this.sidenavOpen)
+
+  }
+
+  /**
+  * Abre el diálogo para buscar
+  */
+  openSearch() {
+
+    this.dialogsService.CmmOpenSearchDialog({
+      bgClass: 'cmm-bg-project-tertiary',
+      textClass: 'text-white',
+      height: '210px',
+    })
 
   }
 

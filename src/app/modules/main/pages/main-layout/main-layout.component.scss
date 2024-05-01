@@ -15,10 +15,22 @@
     margin-top: 184px;
 }
 
+.text_ad {
+    font-size: 16px !important;
+}
+
 @media (max-width: 992px) {
 
     .header_container {
         z-index: 1;
+    }
+
+}
+
+@media (max-width: 567px) {
+
+    .text_ad {
+        font-size: 13px !important;
     }
 
 }

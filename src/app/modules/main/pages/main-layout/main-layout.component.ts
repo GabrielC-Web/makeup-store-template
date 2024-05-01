@@ -1,6 +1,7 @@
 import { Component, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
 import { CmmEcomFooterConfig } from 'src/app/common/data/utils/models/ecommerce.models';
+import { CmmUtilsService } from 'src/app/common/services/utils.service';
 import { icons, logos } from 'src/assets/images/image-routes';
 
 @Component({
@@ -83,6 +84,11 @@ export class MainLayoutComponent {
     ]
   }
 
+  /**
+   * Indica si estoy scrolleando hacia abajo
+   */
+  scrollingDown: boolean = false
+
   @HostListener('window:resize')
   onResize(e: Event) {
 
@@ -95,7 +101,8 @@ export class MainLayoutComponent {
   }
 
   constructor(
-    private router: Router
+    private router: Router,
+    private utilsService: CmmUtilsService
   ) {
 
   }
@@ -115,12 +122,34 @@ export class MainLayoutComponent {
       this.headerAppSpace = 60
     }
 
+    this.detectScrollDirection()
+
   }
 
   listenRouteChanges() {
 
     this.router.events.subscribe(event => {
       this.currentRoute = location.href
+    })
+
+  }
+
+  /**
+   * Detecta el sentido en el que estoy scrolleando
+   */
+  detectScrollDirection() {
+
+    this.utilsService.isScrollingDown.subscribe(value => {
+
+      let totalHeight = document.scrollingElement?.scrollHeight as number
+
+      //* Oculto el header permanentemente si he recorrido al menos 70% de la altura
+      if (window.scrollY / totalHeight * 100 < 70) {
+        this.scrollingDown = value
+      } else {
+        this.scrollingDown = true
+      }
+
     })
 
   }

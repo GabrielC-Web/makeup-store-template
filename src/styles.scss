@@ -7,7 +7,7 @@
 @import "node_modules/bootstrap/dist/css/bootstrap.css";
 @import "./app/common/assets/styles/scss/backgrounds.scss";
 @import "./app/common/assets/styles/scss/materialize.scss";
-@import "./assets/styles/scss/text.scss";
+@import "./app/common/assets/styles/scss/text.scss";
 @import "./app/common/assets/styles/scss/variables.scss";
 @import "./app/common/assets/styles/scss/effects.scss";
 @import "./app/common/assets/styles/scss/themes-material.scss";
@@ -21,6 +21,31 @@ html {
     font-family: "montserrat" !important;
     box-sizing: border-box;
     box-sizing: border-box !important;
+    scroll-behavior: smooth !important;
+}
+
+@font-face {
+    font-family: "montserrat";
+    src: url("./assets/fonts/montserrat/Montserrat-Regular.ttf") format("truetype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "montserrat";
+    src: url("./assets/fonts/montserrat/Montserrat-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "montserrat";
+    src: url("./assets/fonts/montserrat/Montserrat-Black.ttf") format("truetype");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "montserrat";
+    src: url("./assets/fonts/montserrat/Montserrat-Light.ttf") format("truetype");
+    font-weight: lighter;
 }
 
 body {
@@ -30,6 +55,12 @@ body {
 .line {
     width: 50px;
     height: 2px;
+}
+
+.color_box {
+    width: 30px;
+    height: 20px;
+    border: 1px solid black;
 }
 
 @media (max-width: 400px) {

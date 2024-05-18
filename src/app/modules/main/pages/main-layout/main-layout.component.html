@@ -22,7 +22,7 @@
 
         <!-- Contenido principal -->
         <div class="mx-auto w-100 main_container"
-            [ngStyle]="{'margin-top': !scrollingDown? 88 + headerAppSpace + 'px': ''}">
+            [ngStyle]="{'margin-top': !scrollingDown? 148 + headerAppSpace + 'px': ''}">
 
             <mat-sidenav-container class="w-100 position-relative">
 
@@ -36,6 +36,10 @@
 
                 <!-- Contenido principal -->
                 <mat-sidenav-content>
+
+                    <!-- Componente de breadcrumb -->
+                    <cmp-cmm-breadcrumb *ngIf="!currentRoute.includes('home')"></cmp-cmm-breadcrumb>
+
                     <router-outlet></router-outlet>
                 </mat-sidenav-content>
 

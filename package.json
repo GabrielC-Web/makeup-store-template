@@ -1,13 +1,13 @@
 {
   "name": "makeup-store-template",
-  "version": "0.0.29",
+  "version": "0.0.30",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng deploy --base-href=/makeup-store-template/"
+    "deploy": "ng deploy --base-href=/makeup-store-template/ --no-silent"
   },
   "private": true,
   "dependencies": {

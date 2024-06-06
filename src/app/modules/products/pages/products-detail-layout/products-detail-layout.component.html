@@ -11,17 +11,17 @@
 
         <cmp-cmm-new-carousel class="w-100" carouselId="products_detail_carousel">
 
-          <!-- Elementos del carrusel en tamaño pequeño -->
-          <div *ngFor="let item of carouselProducts, index as i" class="carousel_item">
+            <!-- Elementos del carrusel en tamaño pequeño -->
+            <div *ngFor="let item of carouselProducts, index as i" class="carousel_item">
 
-              <div class="w-100 h-100 p-0 d-flex justify-content-center align-items-center" style="gap: 2rem;">
+                <div class="w-100 h-100 p-0 d-flex justify-content-center align-items-center" style="gap: 2rem;">
 
-                  <cmp-cmm-product-card [data]="item" [config]="{colorBoxRounded: true}"
-                      routerLink="/products/detail"></cmp-cmm-product-card>
+                    <cmp-cmm-product-card [data]="item" [config]="{colorBoxRounded: true}"
+                        routerLink="/products/detail"></cmp-cmm-product-card>
 
-              </div>
+                </div>
 
-          </div>
+            </div>
 
         </cmp-cmm-new-carousel>
 
@@ -36,7 +36,7 @@
 
             <div *ngFor="let item of moreProducts" class="col-sm-6 col-md-4 col-xl-3 mb-3 mb-sm-0">
                 <cmp-products-presentation-card [product]="item" class="d-flex justify-content-center"
-                    routerLink="/products"></cmp-products-presentation-card>
+                    routerLink="/Productos"></cmp-products-presentation-card>
             </div>
 
         </div>
@@ -46,7 +46,7 @@
 
     <cmp-cmm-new-button class="w-100 mt-5" style="max-width: 400px;margin-bottom: 200px;"
         [config]="{customBorderRadius: '0px', customHeight: '48px'}">
-        <span class="text-white fs-20" routerLink="/products">VER TODO</span>
+        <span class="text-white fs-20" routerLink="/Productos">VER TODO</span>
     </cmp-cmm-new-button>
 
 </div>

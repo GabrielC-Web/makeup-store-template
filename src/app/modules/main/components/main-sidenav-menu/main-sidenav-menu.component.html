@@ -18,15 +18,15 @@
             <div *ngFor="let item of expansionPanel.items; index as i"
                 class="cursor-pointer dropdown_item border-bottom px-2 py-3">
 
-                <a class="text-black" routerLink="/products" (click)="closeSidenav.emit()">{{item}}</a>
+                <a class="text-black" routerLink="/Productos" (click)="closeSidenav.emit()">{{item}}</a>
             </div>
 
         </mat-expansion-panel>
 
         <!-- Link sin expansion -->
         <span *ngIf="!expansionPanel.items.length" class="px-4 d-flex align-items-center w-100 cursor-pointer"
-            style="height: 64px;" routerLink="/products" (click)="closeSidenav.emit()">
-            <a class="text-black" routerLink="/products">{{expansionPanel.header}}</a>
+            style="height: 64px;" routerLink="/Productos" (click)="closeSidenav.emit()">
+            <a class="text-black" routerLink="/Productos">{{expansionPanel.header}}</a>
         </span>
 
     </div>

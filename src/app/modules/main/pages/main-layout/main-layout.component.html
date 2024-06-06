@@ -4,21 +4,26 @@
     <main class="row w-100 g-0 justify-content-center align-items-start">
 
         <!-- Anuncio -->
-        <div *ngIf="!scrollingDown" class="position-fixed d-flex justify-content-center align-items-center"
-            style="width: 100%;height: 60px;background-color: #FFE2E2;" [ngStyle]="{'z-index':sidenavOpen?'1':'200'}">
+        <div *ngIf="!scrollingDown" [@inOutAnimation]>
 
-            <p class="m-0 text_ad text-center text-black">Tenemos <strong
-                    class="cmm-txt-project-secundary cmm-txt-thin-bold">50%
-                    Off</strong> solo
-                durante 24 horas en productos
-                seleccionados</p>
+            <div [@inOutAnimation] class="position-fixed d-flex justify-content-center align-items-center"
+                style="width: 100%;height: 60px;background-color: #FFE2E2;"
+                [ngStyle]="{'z-index':sidenavOpen?'1':'200'}">
+
+                <p class="m-0 text_ad text-center text-black">Tenemos <strong
+                        class="cmm-txt-project-secundary cmm-txt-thin-bold">50%
+                        Off</strong> solo
+                    durante 24 horas en productos
+                    seleccionados</p>
+
+            </div>
+
+            <!-- Espacio para el navbar -->
+            <cmp-main-header [@inOutAnimation] id="header" class="w-100 position-fixed header_container"
+                [ngStyle]="{'z-index':sidenavOpen?'1':'200','margin-top':headerAppSpace + 'px'}"
+                (openSidenav)="sidenavOpen = $event" [sidenavOpen]="sidenavOpen"></cmp-main-header>
 
         </div>
-
-        <!-- Espacio para el navbar -->
-        <cmp-main-header *ngIf="!scrollingDown" id="header" class="w-100 position-fixed header_container"
-            [ngStyle]="{'z-index':sidenavOpen?'1':'200','margin-top':headerAppSpace + 'px'}"
-            (openSidenav)="sidenavOpen = $event" [sidenavOpen]="sidenavOpen"></cmp-main-header>
 
         <!-- Contenido principal -->
         <div class="mx-auto w-100 main_container"

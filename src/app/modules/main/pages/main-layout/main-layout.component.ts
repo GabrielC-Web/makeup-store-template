@@ -1,3 +1,4 @@
+import { animate, style, transition, trigger } from '@angular/animations';
 import { Component, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
 import { CmmEcomFooterConfig } from 'src/app/common/data/utils/models/ecommerce.models';
@@ -7,7 +8,19 @@ import { icons, logos } from 'src/assets/images/image-routes';
 @Component({
   selector: 'pag-main-layout',
   templateUrl: './main-layout.component.html',
-  styleUrls: ['./main-layout.component.scss']
+  styleUrls: ['./main-layout.component.scss'],
+  animations: [
+    trigger('inOutAnimation', [
+      transition(':enter', [
+        style({ height: 0, opacity: 0 }),
+        animate('0.3s ease-out', style({ height: '*', opacity: 1 })),
+      ]),
+      transition(':leave', [
+        style({ height: '*', opacity: 1 }),
+        animate('0.3s ease-in', style({ height: 0, opacity: 0 })),
+      ]),
+    ]),
+  ],
 })
 export class MainLayoutComponent {
 

@@ -39,5 +39,6 @@ export const images = {
     product12: 'assets/images/products/product12.png',
     girl_makingup: 'assets/images/girl_makingup.png',
     girl_makingup2: 'assets/images/girl_makingup2.png',
+    girl_makingup3: 'assets/images/girl_makingup3.png',
     makeup_bg: 'assets/images/makeup_bg.webp'
 }
